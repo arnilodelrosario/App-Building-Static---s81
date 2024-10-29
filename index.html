@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Educational Resource Hub</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-light" id="navbar">
+        <a class="navbar-brand" href="#">EduHub</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home" onclick="showSection('home')"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#categories-section"
+                onclick="showSection('categories')"
+                >Categories</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" onclick="showSection('about')"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Home Page Section -->
+      <!-- Hero Section -->
+      <div class="container mt-4" id="home" class="page-section active">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="jumbotron bg-light border border-primary rounded">
+              <h1 class="display-4 text-center" id="indtroduction">
+                Welcome to EduHub
+              </h1>
+              <p class="lead text-center">
+                Discover new knowledge and expand your horizons with our curated
+                resources.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Section -->
+      <div class="container mt-4" id="Featured">
+        <h2 class="text-center mb-4" id>Featured Resources</h2>
+        <div class="row">
+          <!-- First Card -->
+          <div class="col-md-6 mb-4">
+            <!-- Adjusted to col-md-6 to take half of the container width -->
+            <div class="card">
+              <img
+                src="images/MERN-Webdev.jpg"
+                class="card-img-top"
+                alt="Resource 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">MERN Web Development</h5>
+                <p class="card-text">
+                  MERN Web Development is all about using a powerful, modern
+                  stack—MongoDB, Express.js, React, and Node.js—to create
+                  full-stack web applications. By combining the flexibility of
+                  JavaScript with these four robust technologies, MERN enables
+                  developers to build everything from interactive front-ends to
+                  high-performance back-ends, all in one cohesive environment.
+                  Perfect for creating single-page applications (SPAs), RESTful
+                  APIs, and real-time apps, MERN is an excellent choice for
+                  anyone looking to dive into a streamlined, JavaScript-based
+                  approach to web development. Whether you're new to coding or
+                  advancing your skills, MERN offers a hands-on, full-stack
+                  experience to bring ideas to life.
+                </p>
+                <a href="#" class="btn btn-primary">Explore</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Second Card -->
+          <div class="col-md-6 mb-4">
+            <!-- Same as the first card for even spacing -->
+            <div class="card">
+              <img
+                src="images/Project-Management.jpg"
+                class="card-img-top"
+                alt="Resource 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project Management</h5>
+                <p class="card-text">
+                  Project management in web development is the organized
+                  approach that keeps development teams on track, ensuring
+                  projects are completed on time, within scope, and aligned with
+                  client goals. By integrating key strategies like Agile, Scrum,
+                  or Kanban, project managers oversee planning, scheduling, task
+                  delegation, and quality control, ensuring each phase of
+                  development is executed smoothly. With clear communication,
+                  detailed timelines, and structured workflows, project
+                  management bridges the gap between creative vision and
+                  technical execution. Essential for coordinating front-end and
+                  back-end efforts, project management transforms web
+                  development from a series of tasks into a structured,
+                  efficient process that maximizes both productivity and
+                  creativity.
+                </p>
+                <a href="#" class="btn btn-primary">Discover</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categories Page Section -->
+      <div id="categories-section" class="page-section">
+        <h1 class="text-center mb-5">Categories</h1>
+        <div class="container" id="categories">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <ul class="list-group">
+                <!-- Category 1 with CTA Button -->
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  id="resources"
+                >
+                  Web Development
+                  <a href="category-1-page.html" class="btn btn-sm btn-primary"
+                    >Learn More</a
+                  >
+                </li>
+                <!-- Category 2 with CTA Button -->
+                <li
+                  class="list-group-item d-flex justify-content-between align-items-center"
+                  id="resources"
+                >
+                  Project Management
+                  <a href="category-1-page.html" class="btn btn-sm btn-primary"
+                    >Learn More</a
+                  >
+                </li>
+                <!-- More categories can be added similarly -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Page Section -->
+      <div id="about" class="page-section">
+        <h1 class="text-center">About Us</h1>
+        <p class="text-center" id="mission">
+          Accessible, high-quality education on the palm of your hands.
+        </p>
+        <p class="text-center p-3">
+          At Educational Hub, we are dedicated to fostering knowledge and skill
+          development through accessible, high-quality learning resources. Our
+          mission is to create a supportive environment where students,
+          educators, and lifelong learners can explore a wide range of subjects
+          and pursue their personal and professional growth. With a diverse
+          array of courses, workshops, and interactive tools, we aim to make
+          learning a dynamic and engaging experience for everyone. Whether
+          you’re advancing your career, seeking new knowledge, or igniting a
+          passion for learning, Educational Hub is here to support you every
+          step of the way. Join us in our commitment to building a brighter,
+          smarter future.
+        </p>
+        <div class="container my-4">
+          <div class="row">
+            <!-- Contact Form -->
+            <div class="col-md-6 mb-4" id="contact">
+              <h2>Contact Us</h2>
+              <form>
+                <div class="mb-3">
+                  <label for="contactName" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="contactName"
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="contactEmail" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="contactEmail"
+                    placeholder="name@example.com"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="contactMessage" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="contactMessage"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+            <!-- Google Maps Embed -->
+            <div class="col-md-6 mb-4" id="contact">
+              <h2>Find Us</h2>
+              <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d243647.71122457655!2d-74.0059413!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1655419723961!5m2!1sen!2sus"
+                  width="100%"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- Join Our Community CTA -->
+          <div class="row">
+            <div class="col-lg-12">
+              <div
+                class="p-2 text-center border border-success rounded bg-light"
+              >
+                <h2>Join Our Community</h2>
+                <p>
+                  Be part of a growing community of learners and enthusiasts!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start">
+      <div class="text-center p-3">© 2024 Mock Educational Hub</div>
+      <p class="text-center text-muted text-center">
+        Disclaimer: This is a mock website created for educational purposes and
+        do not serve any other purpose. The contents of this mock website
+        including but not limited to proprietary elements belong to the rightful
+        owner/s.
+      </p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
